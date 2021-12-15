@@ -1,0 +1,96 @@
+#overview {
+  width: 100vw;
+  height: 50vh;
+  background:
+  linear-gradient(to top,rgba(0, 0, 0, 0.6), transparent),
+  url("../images/pic\ \(2285\).jpg") center/cover no-repeat,
+  #90caf9;
+
+}
+.section-title {
+  color: rgb(35, 12, 99);
+  text-align: center;
+}
+.plan__list {
+  width: 65%;
+  margin: auto;
+}
+.plan {
+  width: 30%;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #424242;
+  box-shadow: 0 0 25px 5px rgba(122, 122, 122, 0.1);
+  border-radius: 4px;
+  direction: rtl;
+}
+.plan--highlighted {
+  background-color: cornflowerblue;
+  color: rgba(5, 7, 75, 1);
+}
+
+.plan__title--highlighted {
+  background: #fffffa;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__feature {
+  margin: 0.5rem 0px;
+}
+
+.plan__btn {
+  background-color: chartreuse;
+  font: inherit;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+}
+
+#features {
+  background: #f5f5f5;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+#features .section-title {
+  margin: 2rem;
+}
+
+.faetures__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.features__list--element {
+  display: inline-block;
+  width: 30%;
+}
+
+.features__image {
+  background-color: royalblue;
+  border: 1px solid rgb(8, 39, 124);
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin: auto;
+}
+.features__discription {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(8, 39, 124);
+}
+
