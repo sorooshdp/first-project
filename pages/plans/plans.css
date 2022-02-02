@@ -4,8 +4,8 @@ main{
 .background{
     background: url('../../images/pic\ \(2285\).jpg') center/cover no-repeat;
     filter: grayscale(40%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position:fixed;
     z-index: -1;
 
