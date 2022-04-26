@@ -15,10 +15,9 @@ main {
     width: 20%;*/
 }
 .testimonial__image-container {
-  width: 100%;
+  width: 50%;
   vertical-align: middle;
   min-width: 300px;
-
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 .customer-image {
@@ -46,14 +45,11 @@ main {
 @media (min-width: 40rem) {
   .testimonial {
     margin: 3rem 0;
-  }
-  .testimonial__image-container {
-    display: inline-block;
-    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .testimonial__info {
-    text-align: right;
-    vertical-align: middle;
     width: 20%;
   }
 }

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "vazir_DF";
   src: url(../fonts/Vazir-Light.woff);
@@ -9,16 +10,30 @@
 body {
   margin: 0;
   font-family: "vazir_DF";
+  display: grid;
+  grid-template-rows: 2rem auto auto;
+  grid-template-areas: "header" "main" "footer";
 }
+
+main {
+  grid-area: main;
+}
+
 .backdrop {
   position: fixed;
-  display:none;
+  display: none;
   z-index: 100;
   left: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.open{
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .main_header {
@@ -27,64 +42,74 @@ body {
   padding: 0.5rem 1rem;
   position: fixed;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.main_header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
+
 .main_header__logo {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #e3f2fd;
 }
+
 .main_nav {
-  display: inline-block;
-  width: calc(100% - 70px);
-  text-align: right;
-  vertical-align: middle;
+  display: flex;
 }
+
 .main_nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
+
 .main_nav__item {
-  display: inline-block;
+  margin: 0 1rem;
 }
 
 .main_nav__item a {
-  color: beige;
+  color: #bbdefb;
   text-decoration: none;
-  margin: 0 16px;
 }
 
 .main_nav__item a:hover,
 .main_nav__item a:active,
 .main_header__logo:hover {
-  color: #252525;
+  color: #ffffff;
 }
+
+.main_nav__item--account{
+  animation: account 0.3s 2s 8;
+}
+
 .main_nav__item--account a {
-  background-color: cornsilk;
+  background-color: #e3f3fd;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   color: #1565c0;
 }
+
 .main-nav__item--account a:hover,
 .main-nav__item--account a:active {
   color: #1565c0;
 }
+
 .main-footer {
-  background-color: slategrey;
+  background-color: #424242;
   padding: 2rem;
+  grid-area: footer;
 }
+
 .main-footer__links {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 .main-footer__link {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -92,7 +117,17 @@ body {
   text-decoration: none;
   color: #f5f5f5;
 }
+
 .main-footer__link:hover,
 .main-footer__link:active {
   color: #e0e0e0;
+}
+
+@keyframes account {
+  form{
+    transform:rotateZ(0);
+  }
+  to{
+    transform:rotateZ(10deg);
+  }
 }

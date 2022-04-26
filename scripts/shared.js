@@ -1,19 +1,19 @@
 let backdrop = document.querySelector('.backdrop')
 let modal = document.querySelector('.modal')
-let SelectPlanBtn = document.querySelectorAll('.plan button')
-let ModalClosBtn = document.querySelector('.modal__action--negative')
+let selectPlanBtn = document.querySelectorAll('.plan button')
+let modalClosBtn = document.querySelector('.modal__action--negative')
 
-for(let i=0;i<SelectPlanBtn.length;i++){
-    SelectPlanBtn[i].addEventListener('click',function(){
-        modal.style.display='block'
-        backdrop.style.display='block'
-    })
+for (let i = 0; i < selectPlanBtn.length; i++) {
+  selectPlanBtn[i].addEventListener('click', () => {
+    modal.classList.add('open')
+    backdrop.classList.add('open')
+  })
 }
 
-backdrop.addEventListener('click',closemodal)
-ModalClosBtn.addEventListener('click',closemodal)
+backdrop.addEventListener('click', closeModal)
+modalClosBtn.addEventListener('click', closeModal)
 
-function closemodal(){
-    backdrop.style.display='none'
-    modal.style.display='none'
+function closeModal() {
+  modal.classList.remove('open')
+  backdrop.classList.remove('open')
 }

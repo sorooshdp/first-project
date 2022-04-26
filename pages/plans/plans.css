@@ -19,6 +19,7 @@ main{
     border-radius: 4px;
     z-index: 0;
     position: relative;
+    overflow: hidden;
 }
 .plan a {
     text-decoration: none;
@@ -37,14 +38,19 @@ main{
 }
 
 .plan__badge{
-    top:0;
-    margin: 1.2rem;
-    font-size: 1.1rem;
     position: absolute;
+    top:0;
+    margin: 0;
+    font-size: 1.1rem;
     right:0;
     background-color: #1e88e5;
     padding: 0.2rem 0.5rem;
     color: #ffffff;
+    transform: rotatez(45deg) translatex(3.5rem) translateY(-2rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+
 }
 #plus{
     background: #bbdefb;
