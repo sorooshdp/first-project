@@ -1,12 +1,11 @@
 # my first project
 
-a simple responsive wesite developed with HTML and CSS, using features like
+a simple responsive website developed with HTML and CSS, using features like
 
 - css grid
-- flex box
+- flexbox
 - media queries
 - animation
-- 
 
 #preview
 
