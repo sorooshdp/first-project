@@ -7,6 +7,6 @@ a simple responsive website developed with HTML and CSS, using features like
 - media queries
 - animation
 
-#preview
+# Preview
 
 ![preview-image](https://github.com/sorooshdp/first-project/assets/92013044/a1485c57-a972-4bc7-81f5-096064add758)
